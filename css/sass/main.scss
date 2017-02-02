@@ -1,0 +1,25 @@
+@import "bourbon/bourbon";
+@import "normalize.css";
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: #f0f0f0;
+	width: 100%;
+	height: 100%;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	.empty{
+		height: 115px;
+	}
+}
+/*Footer*/
+.footer{
+	height: 115px;
+	margin-top: -115px;
+	position: relative; /*поскольку relative в .wrapper меняет приоритеты z-index*/
+}
