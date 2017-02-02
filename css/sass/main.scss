@@ -1,9 +1,40 @@
 @import "bourbon/bourbon";
 @import "normalize.css";
+/*-----------------------Mixins--------------------------*/
+@mixin clearfix{
+	&:before,
+	&:after{
+		content: "";
+		display: table;
+	}
+
+	&:after{
+		clear: both;
+	}
+}
+/*--------------------Personal-----------------------*/
+*{
+	box-sizing: border-box;
+}
 html{
 	width: 100%;
 	height: 100%;
 }
+ul{
+	padding: 0;
+	margin: 0;
+	li{
+		list-style: none;
+	}
+}
+p{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+/*-----------------------body----------------------*/
 body{
 	background: #f0f0f0;
 	width: 100%;
@@ -13,8 +44,57 @@ body{
 	min-height: 100%;
 	overflow: hidden;
 	position: relative;
+	header{
+		background: #fb3e38;
+		@include linear-gradient(left, #fb3e38 0%, #ff8f30 100%);/*bourbone docs*/
+		.container{/*put header into the middle of the monitor*/
+			width: 1170px;
+			margin: 0 auto;
+			.header__top{
+				@include clearfix;
+				.header__logo, .header__search, .header__menu{
+					float: left;
+				}
+				/*------------------logo----------------------------*/
+				.header__logo{
+					width: 25%;
+					.logo{
+						display: block;
+						.logo__pic{
+							display: block;
+							max-width: 175px;
+							max-height: 55px;
+						}
+					}
+				}
+				/*--------------------search---------------------------*/
+				.header__search{
+					width: 40%;
+					.search{
+						position: relative;
+						.search__input{
+							padding: 10px 40px 10px 35px;
+							background: rgba(#fff, .2);
+							border: 0 none;
+							border-radius: 50px;
+							color: #fff;
+							outline: none;
+							@include placeholder{
+								color: #ccc;
+							}
+						}
+					}
+				}
+				/*-----------------------menu-------------------------*/
+				.header__menu{
+					width: 35%;
+				}
+			}
+		}
+	}
+
 	.empty{
-		height: 115px;
+		height: 115px; /*высота равна .footer. Просто заплатка чтобы блок .wraper не налезал на .footer*/
 	}
 }
 /*Footer*/

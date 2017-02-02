@@ -11,8 +11,48 @@
 		<p class="chromeframe">It seams that you use old brovser version</p>
 	<![endif-->
 	<div class="wrapper">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, ex! Neque dolorem itaque repudiandae veritatis, sapiente molestiae pariatur maiores ipsa, officiis quo. Exercitationem ullam qui sed, impedit quaerat nesciunt similique!
-		
+		<header class="header">
+			<div class="container">
+				<!--header top-->
+				<div class="header__top">
+					<div class="header__logo">
+						<a href="#" class="logo">
+							<img src="img/logo.jpg" alt="" class="logo__pic">
+						</a>
+					</div>
+					<div class="header__search">
+						<div class="search">
+							<form action="" class="search__form">
+								<input type="text" name="" id="" placeholder="Serach" class="search__input">
+								<input type="submit" value="" class="search__submit">
+							</form>
+						</div>
+					</div>
+					<div class="header__menu">
+						<ul class="menu">
+							<li class="mneu__item">
+								<a href="" class="menu__link">
+									<span class="menu__link-text">Map</span>
+								</a>
+							</li>
+							<li class="mneu__item">
+								<a href="" class="menu__link">
+									<span class="menu__link-text">History</span>
+								</a>
+							</li>
+							<li class="mneu__item">
+								<a href="" class="menu__link">
+									<span class="menu__link-icon menu__link_iconed"></span>
+									<span class="menu__link-text">Your byes</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--header top-->
+			</div>
+		</header>
+
 		<div class="empty"></div> <!--Заглушка чтобы не wrapper на наползал на footer-->
 	</div>
 
