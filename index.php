@@ -1,3 +1,6 @@
+<?php 
+	header('Cache-Control: no-store, no-cache');
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,8 +44,10 @@
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">
-									<span class="menu__link-icon menu__link_iconed"></span>
+								<a href="" class="menu__link menu__link-iconed">
+									<span class="menu__link-icon menu__link_iconed">
+										<img src="img/box.png" alt="" class="menu__link-icon-pic">
+									</span>
 									<span class="menu__link-text">Your byes</span>
 								</a>
 							</li>
