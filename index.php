@@ -30,17 +30,17 @@
 					</div>
 					<div class="header__menu">
 						<ul class="menu">
-							<li class="mneu__item">
+							<li class="menu__item">
 								<a href="" class="menu__link">
 									<span class="menu__link-text">Map</span>
 								</a>
 							</li>
-							<li class="mneu__item">
+							<li class="menu__item">
 								<a href="" class="menu__link">
 									<span class="menu__link-text">History</span>
 								</a>
 							</li>
-							<li class="mneu__item">
+							<li class="menu__item">
 								<a href="" class="menu__link">
 									<span class="menu__link-icon menu__link_iconed"></span>
 									<span class="menu__link-text">Your byes</span>
